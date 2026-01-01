@@ -1,0 +1,23 @@
+name: GitSplorer
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    macOS: 13.0
+  generateEmptyDirectories: true
+settings:
+  base:
+    SWIFT_VERSION: 5.9
+    MACOSX_DEPLOYMENT_TARGET: 13.0
+targets:
+  GitSplorer:
+    type: application
+    platform: macOS
+    sources:
+      - path: Sources/GitSplorer
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.GitSplorer
+        INFOPLIST_FILE: GitSplorer/Info.plist
+        CODE_SIGN_STYLE: Automatic
+        ENABLE_HARDENED_RUNTIME: YES
+        LD_RUNPATH_SEARCH_PATHS: "$(inherited) @executable_path/../Frameworks"
