@@ -1,3 +1,4 @@
+rebase test
 # GitSplorer
 
 A native macOS Git file explorer focused on visual navigation of repositories, history, and remotes. This repo ships a SwiftUI app with a Git CLI-backed service layer and OAuth-based GitHub/GitLab connections.
